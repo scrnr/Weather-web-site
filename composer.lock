@@ -1,0 +1,66 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d853da1ad555db866f0737988f502cdb",
+    "packages": [
+        {
+            "name": "scrnr/weather",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/scrnr/OpenWeatherApi-PHP.git",
+                "reference": "0cb85fc50eb26f5584abc36c892c5abae74d721a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/scrnr/OpenWeatherApi-PHP/zipball/0cb85fc50eb26f5584abc36c892c5abae74d721a",
+                "reference": "0cb85fc50eb26f5584abc36c892c5abae74d721a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Scrnr\\Weather\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aleksei",
+                    "email": "scrnr@outlook.com"
+                }
+            ],
+            "description": "OpenWeatherApi application in PHP",
+            "homepage": "https://github.com/scrnr/OpenWeatherApi-PHP",
+            "keywords": [
+                "open-weather",
+                "weather"
+            ],
+            "support": {
+                "issues": "https://github.com/scrnr/OpenWeatherApi-PHP/issues",
+                "source": "https://github.com/scrnr/OpenWeatherApi-PHP/tree/v1.0.0"
+            },
+            "time": "2023-04-27T17:41:13+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}

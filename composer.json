@@ -1,0 +1,5 @@
+{
+    "require": {
+        "scrnr/weather": "^1.0"
+    }
+}

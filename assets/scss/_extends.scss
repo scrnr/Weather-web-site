@@ -1,0 +1,44 @@
+@mixin flex($align: 'center', $justify: 'center', $direction: 'row') {
+    display: flex;
+    align-items: #{$align};
+    justify-content: #{$justify};
+    flex-direction: #{$direction};
+}
+
+@mixin grid($align: 'center', $justify: 'center', $columns: 'auto', $rows: 'auto') {
+    display: grid;
+    align-items: #{$align};
+    justify-items: #{$justify};
+
+    grid-template: {
+        columns: #{$columns};
+        rows: #{$rows};
+    }
+}
+
+@mixin background($size, $position: 'center', $repeat: 'no-repeat') {
+    background: {
+        position: #{$position};
+        repeat: #{$repeat};
+        size: #{$size};
+    }
+
+    @content;
+}
+
+@mixin font-size($size, $weight: 'normal', $style: 'normal', $isDegrees: true) {
+    font: {
+        size: #{$size + 'px'};
+        weight: #{$weight};
+        style: #{$style};
+    }
+
+    @if $isDegrees {
+        & > b {
+            font-style: normal;
+        }
+    }
+}
+
+$nightColor: #c0c0c0;
+$errorColor: #e10808;

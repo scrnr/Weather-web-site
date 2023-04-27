@@ -1,0 +1,116 @@
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 450px;
+    }
+
+    .forecast {
+        padding: 10px;
+
+        &__header-bar {
+            flex-direction: column;
+            align-items: flex-end;
+            row-gap: 10px;
+
+            .header-bar {
+                &__city-name {
+                    font-size: 16px;
+                }
+
+                &__date {
+                    order: -1;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        &__today {
+            width: 80%;
+            margin-bottom: 10px;
+
+            & > .main {
+                @include flex($direction: 'column');
+                row-gap: 15px;
+
+                .main {
+                    &__item {
+                        .degrees {
+                            &__like,
+                            &__min {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            & > .more {
+                grid-template-columns: auto;
+                justify-items: center;
+                margin-top: 15px;
+
+                .more {
+                    &__item {
+                        font-size: 15px;
+
+                        &:nth-child(2n) {
+                            justify-self: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        &__four-days {
+            grid-template-columns: auto;
+            row-gap: 7px;
+            width: 100%;
+            margin-bottom: 10px;
+
+            .four-days {
+                &__item {
+                    flex-direction: row;
+                    justify-content: space-around;
+                    width: 100%;
+                    padding-bottom: 0;
+
+                    &.hide {
+                        display: none;
+                    }
+                }
+
+                &__icon {
+                    width: 45px;
+                    height: 45px;
+                }
+
+                &__degrees-box {
+                    font-size: 16px;
+                    width: 70px;
+                }
+            }
+        }
+
+        &__form {
+            width: 100%;
+            row-gap: 7px;
+
+            .form {
+                &__input {
+                    font-size: 14px;
+                    width: 80%;
+                }
+
+                &__error-box {
+                    font-size: 15px;
+                }
+
+                &__submit-btn {
+                    font-size: 16px;
+                    width: 80px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}
